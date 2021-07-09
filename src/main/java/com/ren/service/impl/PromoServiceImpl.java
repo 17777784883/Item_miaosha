@@ -149,7 +149,6 @@ public class PromoServiceImpl implements PromoService {
             return null;
         }
 
-
         /*生成令牌*/
         // 生成token 并且存入redis内并给一个5分钟的有效期
         String token = UUID.randomUUID().toString().replace("-","");
