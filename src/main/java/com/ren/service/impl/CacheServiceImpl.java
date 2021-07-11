@@ -28,7 +28,6 @@ public class CacheServiceImpl implements CacheService {
                 .expireAfterWrite(60,TimeUnit.SECONDS).build();
     }
 
-
     @Override
     public void setCommonCache(String key, Object value) {
         commonCache.put(key,value);
